@@ -10,10 +10,8 @@ class UrlMappings {
         }
 
         "/json/diet/$id"(controller: 'diet', action: 'getJson')
-
-
-
-        "/"(view:"/index")
+        
+        "/"(controller:"diet")
         "500"(view:'/error')
         "404"(view:'/notFound')
     }
