@@ -3,7 +3,7 @@ package diet
 import grails.gorm.transactions.Transactional
 import grails.rest.RestfulController
 
-@Transactional(readOnly = true)
+@Transactional(readOnly = false)
 class DietController extends RestfulController {
 
     static allowedMethods = [save: "POST", update: "PUT", delete: "DELETE"]

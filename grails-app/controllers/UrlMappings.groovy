@@ -1,5 +1,3 @@
-package diet
-
 class UrlMappings {
 
     static mappings = {
@@ -10,7 +8,7 @@ class UrlMappings {
         }
 
         "/json/diet/$id"(controller: 'diet', action: 'getJson')
-        
+
         "/"(controller:"diet")
         "500"(view:'/error')
         "404"(view:'/notFound')
