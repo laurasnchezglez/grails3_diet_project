@@ -1,10 +1,10 @@
-package dieta
+package diet
 
 import diet.DietController
 import grails.testing.web.controllers.ControllerUnitTest
 import spock.lang.Specification
 
-class DietaControllerSpec extends Specification implements ControllerUnitTest<DietController> {
+class DietControllerSpec extends Specification implements ControllerUnitTest<DietController> {
 
     def setup() {
     }
