@@ -2,6 +2,7 @@ package diet
 
 import grails.gorm.transactions.Transactional
 import grails.rest.RestfulController
+import groovy.json.JsonSlurper
 
 @Transactional(readOnly = false)
 class DietController extends RestfulController {
@@ -15,9 +16,9 @@ class DietController extends RestfulController {
     def index() { 
 		//render "esta es mi diet!"
 
-		List<Diet> dietaList = Diet.findAll()
+		List<Diet> dietList = Diet.findAll()
 
-		render(view:"index", model: ["dietaList":dietaList])
+		render(view:"index", model: ["dietList":dietList])
 	}
 
 	def show( ){
@@ -100,6 +101,11 @@ class DietController extends RestfulController {
         println "EStamos en la fución getjson"
         Diet d = Diet.get(params.id)
         respond d
+    }
+
+    def createDietaJson (){
+        def jsonSlurper = new JsonSlurper()
+        
     }
 
 

@@ -52,9 +52,9 @@ class BootStrap {
        // f4.save flush:true, failOnError: true
         d2.addToFoodAllowed(f4)
 
-        List<Diet> dietaList = new ArrayList<Diet>();
-        dietaList.add(d)
-        dietaList.add(d2)
+        List<Diet> dietList = new ArrayList<Diet>();
+        dietList.add(d)
+        dietList.add(d2)
 
     }
     def destroy = {
